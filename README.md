@@ -22,6 +22,8 @@ sudo ./check.sh 10.10.10.11
 
 This will save the logs to `output.log` in the same working directory.
 
+![screenshot](image.png)
+
 ## Functions
 
 The script performs the following checks:
