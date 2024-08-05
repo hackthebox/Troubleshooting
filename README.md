@@ -5,7 +5,7 @@ This script helps troubleshoot network connectivity and VPN connections on a use
 ## Usage
 
 ```sh
-git clone https://github.com/DiabloHTB/Troubleshooting
+git clone https://github.com/hackthebox/Troubleshooting
 cd Troubleshooting
 ```
 
