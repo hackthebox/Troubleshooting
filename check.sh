@@ -224,7 +224,7 @@ fi
 
 # Internet Access
 if [[ $PING_EXTERNAL == "success" ]]; then
-  log "${LIGHT_GREEN}Internet Access${RESET}: ${LIGHT_GREEN} Connected to the Internet ✔️${RESET}"
+  log "\n\n${LIGHT_GREEN}Internet Access${RESET}: ${LIGHT_GREEN} Connected to the Internet ✔️${RESET}"
 else
   log "${LIGHT_GREEN}Internet Access${RESET}: ${RED}✘ Not Connected ✘${RESET}"
 fi
