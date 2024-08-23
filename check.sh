@@ -224,23 +224,23 @@ fi
 
 # Internet Access
 if [[ $PING_EXTERNAL == "success" ]]; then
-  echo -e "${LIGHT_GREEN}Internet Access${RESET}: ${LIGHT_GREEN} Connected to the Internet ✔️${RESET}"
+  log "${LIGHT_GREEN}Internet Access${RESET}: ${LIGHT_GREEN} Connected to the Internet ✔️${RESET}"
 else
-  echo -e "${LIGHT_GREEN}Internet Access${RESET}: ${RED}✘ Not Connected ✘${RESET}"
+  log "${LIGHT_GREEN}Internet Access${RESET}: ${RED}✘ Not Connected ✘${RESET}"
 fi
 
 # VPN Connection
 if [[ $ConnectVPN == "success" ]]; then
-  echo -e "${LIGHT_GREEN}VPN Connection${RESET}: ${LIGHT_GREEN} Connected to VPN ✔️${RESET}"
+  log "${LIGHT_GREEN}VPN Connection${RESET}: ${LIGHT_GREEN} Connected to VPN ✔️${RESET}"
 else
-  echo -e "${LIGHT_GREEN}VPN Connection${RESET}: ${RED}✘ Not Connected to VPN ✘${RESET}"
+  log  "${LIGHT_GREEN}VPN Connection${RESET}: ${RED}✘ Not Connected to VPN ✘${RESET}"
 fi
 
 # tun0 Interface
 if [[ $tun_count -eq 1 ]]; then
-  echo -e "${LIGHT_GREEN}Tun Interfaces${RESET}: ${LIGHT_GREEN} One Tun0 interface detected ✔️${RESET}"
+  log "${LIGHT_GREEN}Tun Interfaces${RESET}: ${LIGHT_GREEN} One Tun0 interface detected ✔️${RESET}"
 else
-  echo -e "${LIGHT_GREEN}Tun Interfaces${RESET}: ${RED}✘ Number of Tun interfaces: ${tun_count}${RESET}"
+  log "${LIGHT_GREEN}Tun Interfaces${RESET}: ${RED}✘ Number of Tun interfaces: ${tun_count}${RESET}"
 fi
 
 # Notice
